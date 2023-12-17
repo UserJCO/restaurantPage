@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open sans";
+  border-radius: 15px;
+}
+:root {
+  --color-encabezado: #eafdf8;
+  --color-menu-superior: #e5d4ed;
+  --color-cuerpo: #514f59;
+  --texto-oscuro: #000000;
+  --texto-claro: #c6d8ff;
+  --color-notas: #143f3a99;
+  --color-boton: #e7e7e7;
+  --color-boton-hover: #8b939c;
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+}
+.cuerpo {
+  min-height: calc(100vh - 100px);
+  background-image: url(/dist/images/reserva.jpg);
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: 500px 700px;
+  background-position: top right;
+  background-position-y: 15px;
+  background-position-x: 90%;
+  background-color: rgba(29, 141, 126, 0.3);
+  backface-visibility: hidden;
+  color: var(--text-color);
+  transition: var(--tran-04);
+  padding: 0 5%;
+  border: solid 1px var(--color-cuerpo);
+}
+.personal,
+.reserva {
+  margin: 15px 0px;
+  padding: 25px 30px;
+  border-radius: 15px 35px 15px 35px;
+  width: 45%;
+}
+legend {
+  text-align: left;
+}
+label {
+  display: block;
+  width: 300px;
+}
+.radio {
+  display: inline;
+  width: 10px;
+  margin: 5px;
+}
+input {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 70px;
+  background-color: rgba(128, 128, 128, 0.5);
+  font-weight: 700;
+  color: var(--texto-claro);
+  width: 320px;
+  text-align: center;
+}
+input:valid {
+  border-color: gray;
+  color: var(--texto-oscuro);
+}
+input:focus {
+  background-color: white;
+  color: #000000;
+}
+input:invalid {
+  border-color: rgba(197, 67, 67, 0.685);
+  background-color: rgba(197, 67, 67, 0.5);
+  color: var(--texto-oscuro);
+}
+.legales > p > label {
+  display: inline;
+}
+.legales > p > label > input {
+  display: inline;
+  width: 45px;
+  margin: 10px;
+}
+button {
+  padding: 5px;
+  width: 200px;
+  margin-bottom: 25px;
+  text-align: center;
+  align-items: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

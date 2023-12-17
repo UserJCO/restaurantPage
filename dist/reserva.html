@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/encabezado.css" />
+    <link rel="stylesheet" href="/src/reserva.css" />
+  </head>
+  <body>
+    <div id="content">
+      <script src="/src/encabezado.js"></script>
+      <div class="cuerpo">
+        <form id="contacto" action="reserva" method="post">
+          <fieldset class="personal">
+            <legend>datos Personales</legend>
+            <p>
+              <label
+                >*Nombres:<input
+                  type="text"
+                  required
+                  maxlength="40"
+                  placeholder="Tu nombre de reserva"
+                  autocomplete="given-name"
+              /></label>
+            </p>
+            <p>
+              <label
+                >*Apellidos:<input
+                  type="text"
+                  required
+                  maxlength="40"
+                  placeholder="Tu apellido de reserva"
+                  autocomplete="family-name"
+              /></label>
+            </p>
+            <p>
+              <label
+                >*Email:<input
+                  type="email"
+                  required
+                  placeholder="correo@servicio.com"
+                  autocomplete="on"
+              /></label>
+            </p>
+            <p>
+              <label
+                >*Telefono:<input
+                  type="tel"
+                  required
+                  maxlength="4"
+                  minlength="2"
+                  placeholder="codigo pais ej +54"
+                  autocomplete="tel"
+                  inputmode="numeric"
+                  pattern="+[0-9]+" /><input
+                  type="tel"
+                  required
+                  maxlength="5"
+                  minlength="1"
+                  placeholder="codigo de area ej 0280"
+                  autocomplete="tel"
+                  inputmode="numeric"
+                  pattern="[0-9]+" /><input
+                  type="tel"
+                  required
+                  maxlength="12"
+                  minlength="4"
+                  placeholder="numero de telefono ej 154547547"
+                  autocomplete="tel"
+                  inputmode="numeric"
+                  pattern="[0-9]+"
+              /></label>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset class="reserva">
+            <legend>datos de la Reserva</legend>
+            <p>
+              <label>*Fecha de reserva:<input type="date" required /></label>
+            </p>
+            <p>
+              <label class="radio"
+                >Servicio de almuerzo
+                <input
+                  class="radio"
+                  type="radio"
+                  name="comida"
+                  value="almuerzo"
+                  required
+              /></label>
+            </p>
+            <p>
+              <label><input name="almuerzo" list="almuerzo" /></label>
+            </p>
+            <datalist id="almuerzo">
+              <option value="12:00"></option>
+              <option value="12:30"></option>
+              <option value="13:00"></option>
+              <option value="13:30"></option>
+              <option value="14:00"></option>
+              <option value="14:30"></option>
+              <option value="15:00"></option>
+              <option value="15:30"></option>
+            </datalist>
+            <p>
+              <label class="radio"
+                >Servicio de cena
+                <input
+                  class="radio"
+                  type="radio"
+                  name="comida"
+                  value="cena"
+                  required
+              /></label>
+            </p>
+            <p>
+              <label><input name="almuerzo" list="almuerzo" /></label>
+            </p>
+            <datalist id="cena">
+              <option value="19:00"></option>
+              <option value="19:30"></option>
+              <option value="20:00"></option>
+              <option value="20:30"></option>
+              <option value="21:00"></option>
+              <option value="21:30"></option>
+              <option value="22:00"></option>
+              <option value="22:30"></option>
+              <option value="23:00"></option>
+            </datalist>
+            <p>
+              <label
+                >*Cantidad de Personas:<input
+                  type="number"
+                  required
+                  min="1"
+                  max="20"
+              /></label>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset class="legales">
+            <legend>Condiciones legales</legend>
+            <p>
+              <label
+                ><input type="checkbox" required /><a
+                  target="_blank"
+                  href="./legal.html"
+                  >* Acepto las condiciones de uso, política de privacidad y
+                  aviso legal</a
+                ></label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" required /><a
+                  target="_blank"
+                  href="./usos.html"
+                  >* Consiento el tratamiento de datos personales</a
+                ></label
+              >
+            </p>
+            <p>
+              <label
+                ><input type="checkbox" /><a href="http://"
+                  >Consiento la recepción de comunicaciones del restaurante por
+                  e-mail y/o SMS con fines comerciales</a
+                ></label
+              >
+            </p>
+          </fieldset>
+          <br />
+          <p><button type="submit">enviar</button></p>
+        </form>
+      </div>
+    </div>
+    <script src="/src/reserva.js"></script>
+  </body>
+</html>
