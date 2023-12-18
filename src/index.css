@@ -19,7 +19,7 @@
     --tran-04: all 0.4s ease;
 }
 .cuerpo {
-    background-image: url(/dist/images/imagen.png);
+    background-image: url(./images/imagen.png);
     background-repeat: no-repeat;
     background-attachment:local;
     color: var(--text-color);

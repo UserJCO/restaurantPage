@@ -19,7 +19,7 @@
 }
 .cuerpo {
   min-height: calc(100vh - 100px);
-  background-image: url(/dist/images/reserva.jpg);
+  background-image: url(./images/reserva.jpg);
   background-repeat: no-repeat;
   background-attachment: local;
   background-size: 500px 700px;
